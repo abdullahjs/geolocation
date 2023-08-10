@@ -7,7 +7,7 @@ if (!empty($_GET['status'])) {
     switch ($_GET['status']) {
         case 'succ':
             $statusType = 'alert-success';
-            $statusMsg = 'Members data has been imported successfully.';
+            $statusMsg = 'CSV data has been imported successfully.';
             break;
         case 'err':
             $statusType = 'alert-danger';
@@ -83,7 +83,7 @@ if (!empty($_GET['status'])) {
                 <tbody>
                     <?php
                     // Get member rows
-                    $result = $db->query("SELECT * FROM location ORDER BY id DESC");
+                    $result = $db->query("SELECT * FROM walgreens ORDER BY id DESC");
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
                     ?>

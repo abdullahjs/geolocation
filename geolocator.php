@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Geocode find Latitude & Longitude form CSV file</title>
 </head>
@@ -16,9 +15,10 @@
 <body>
 
     <?php
+    ini_set('MAX_EXECUTION_TIME', '-1');
 
     // Set your Google Maps API key here
-    // $api_key = 'AIzaSyDwYhB5FTB2GBBqQOeZ0-WnDj8K8qZuyeo';
+    $api_key = 'AIzaSyDwYhB5FTB2GBBqQOeZ0-WnDj8K8qZuyeo';
 
     // Check if a CSV file was uploaded
     if (isset($_FILES['file'])) {
